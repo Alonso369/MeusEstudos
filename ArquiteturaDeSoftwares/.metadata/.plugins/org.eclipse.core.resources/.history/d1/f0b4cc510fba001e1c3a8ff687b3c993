@@ -1,0 +1,30 @@
+package escola;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+import br.com.sistran.escola.aluno.CPF;
+
+class CpfTeste {
+
+	@Test
+	void naoDeveriaCriarUmCpfInvalido() {
+		assertThrows(IllegalArgumentException.class, 
+				() -> new CPF(null));
+		
+		assertThrows(IllegalArgumentException.class,
+				() -> new CPF(""));
+		
+		assertThrows(IllegalArgumentException.class, 
+				() -> new CPF("12345678900"));
+	}
+	
+	@Test
+	void deveriaPermitirCriarCPFComNumeroValido() {
+		String numero = "123.456.789-90";
+		CPF  cpf = new CPF(numero);
+		assertEquals(numero, cpf.getCPF());
+	}
+
+}

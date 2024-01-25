@@ -1,0 +1,16 @@
+package escola;
+
+public class Telefone {
+
+	private String ddd;
+	private String telefone;
+	public Telefone(String ddd, String telefone) {
+		if (telefone == null || !telefone.matches("^[(\\\\d{2}\\\\)]+[\\\\[0-9]||[0-8]")) {
+			throw new IllegalArgumentException("Telefone inválido!");
+		}
+		this.ddd = ddd;
+		this.telefone = telefone;
+	}
+	
+	
+}

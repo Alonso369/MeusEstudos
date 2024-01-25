@@ -1,0 +1,23 @@
+package br.com.sistran.escola;
+
+import java.util.List;
+
+import br.com.sistran.escola.dominio.aluno.Aluno;
+import br.com.sistran.escola.dominio.aluno.CPF;
+import br.com.sistran.escola.dominio.aluno.Email;
+import br.com.sistran.escola.dominio.aluno.RepositorioDeAlunos;
+import br.com.sistran.escola.infra.alunos.RepositorioDeAlunosEmMemoria;
+
+public class MatricularAluno {
+
+	public static void main(String[] args) {
+		String nome = "Fulano da Silva";
+		CPF cpf = new CPF("123.124.123-89");
+		Email email = new Email("fulano@gamil.com");
+	
+		Aluno aluno = new Aluno(cpf, nome, email);
+		
+		RepositorioDeAlunos repositorio = new RepositorioDeAlunosEmMemoria() 
+		repositorio.matricular(aluno);
+	}
+}

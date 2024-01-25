@@ -1,0 +1,14 @@
+package br.com.sistran.escola.aplicacao.aluno.matricular;
+
+public class MatricularAlunoDto {
+
+	private String nomeAluno;
+	private String cpfAluno;
+	private String emailAluno;
+	
+	public MatricularAlunoDto(String nomeAluno, String cpfAluno, String emailAluno) {
+		this.nomeAluno = nomeAluno;
+		this.cpfAluno = cpfAluno;
+		this.emailAluno = emailAluno;
+	}
+}

@@ -1,0 +1,12 @@
+package br.com.sistran.escola;
+
+public class MatricularAlunoPorLinhaDeComando {
+
+	public static void main(String[] args) {
+		String nome = "Fulano da Silva";
+		String cpf = "123.124.123-89";
+		String email = "fulano@gamil.com";
+	
+		
+	}
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="escola.Telefone"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalAccessError"/>
+    <fullyQualifiedTypeName name="java.lang.IllegalArgumentException"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="escola.FabricaDeAluno"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.sql.Connection"/>
+    <fullyQualifiedTypeName name="javax.management.RuntimeErrorException"/>
+    <fullyQualifiedTypeName name="br.com.sistran.escola.dominio.aluno.Telefone"/>
+    <fullyQualifiedTypeName name="java.sql.ResultSet"/>
+    <fullyQualifiedTypeName name="java.sql.SQLException"/>
+    <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="br.com.sistran.escola.dominio.aluno.AlunoNaoEncontrado"/>
+    <fullyQualifiedTypeName name="br.com.sistran.escola.dominio.aluno.CifradorDeSenha"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="java.security.NoSuchAlgorithmException"/>
+    <fullyQualifiedTypeName name="java.security.MessageDigest"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="br.com.sistran.escola.aplicacao.indicacao.EnviarEmailIndicacao"/>
+    <fullyQualifiedTypeName name="br.com.sistran.escola.dominio.aluno.RepositorioDeAlunos"/>
+    <fullyQualifiedTypeName name="br.com.sistran.escola.dominio.aluno.Aluno"/>
+    <fullyQualifiedTypeName name="br.com.sistran.escola.dominio.aluno.Email"/>
+    <fullyQualifiedTypeName name="br.com.sistran.escola.dominio.aluno.CPF"/>
+    <fullyQualifiedTypeName name="br.com.sistran.escola.MatricularAlunoPorLinhaDeComando"/>
+    <fullyQualifiedTypeName name="br.com.sistran.escola.infra.alunos.RepositorioDeAlunosEmMemoria"/>
+    <fullyQualifiedTypeName name="br.com.sistran.escola.aplicacao.aluno.matricular.MatricularAluno"/>
+    <fullyQualifiedTypeName name="br.com.sistran.escola.aplicacao.aluno.matricular.MatricularAlunoDto"/>
+</qualifiedTypeNameHistroy>

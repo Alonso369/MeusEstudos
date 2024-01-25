@@ -1,0 +1,5 @@
+package br.com.sistran.escola.dominio.aluno;
+
+public interface CifradorDeSenha {
+
+}

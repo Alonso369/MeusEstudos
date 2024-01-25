@@ -1,0 +1,15 @@
+package escola;
+
+public class CPF {
+
+	private String cpf;
+
+	public CPF(String cpf) {
+		if (cpf == null || !cpf.matches("")) {
+			throw new IllegalArgumentException("CPF inválido");
+		}
+		this.cpf = cpf;
+	}
+	
+	
+}

@@ -1,0 +1,12 @@
+package br.com.sistran.escola.infra.alunos;
+
+import br.com.sistran.escola.dominio.aluno.CPF;
+
+public class AlunoNaoEncontrado extends RuntimeException {
+
+	private static final long serialVersionUID = 1L;
+	
+	public AlunoNaoEncontrado(CPF cpf) {
+		super("Aluno nao encontrado com cpf: " + cpf.getCPF());
+	}
+}

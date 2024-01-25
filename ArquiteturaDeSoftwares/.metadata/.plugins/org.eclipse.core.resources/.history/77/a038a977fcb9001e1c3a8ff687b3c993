@@ -1,0 +1,16 @@
+package escola;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+class TelefoneTest {
+
+	@Test
+	void naoDeveCriarUmTelefoneInvalido() {
+		assertThrows(IllegalArgumentException.class, 
+				() -> new Telefone(null));
+		
+	}
+
+}

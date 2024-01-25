@@ -1,0 +1,46 @@
+package br.com.sistran.escola.infra.alunos;
+
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.List;
+
+import javax.management.RuntimeErrorException;
+
+import br.com.sistran.escola.dominio.aluno.Aluno;
+import br.com.sistran.escola.dominio.aluno.CPF;
+import br.com.sistran.escola.dominio.aluno.RepositorioDeAlunos;
+
+public class RepositorioDeAlunosComJDBC implements RepositorioDeAlunos {
+
+	private final Connection connection;
+	
+	public RepositorioDeAlunosComJDBC(Connection connection) {
+		this.connection = connection;
+	}
+
+	@Override
+	public void matricular(Aluno aluno) {
+		try {
+			String sql = "INSERT INTO ALUNO VALUES(?, ?, ?)";
+			PreparedStatement ps = connection.prepareStatement(sql);
+		} catch (SQLException e) {
+			throw new RuntimeException(e);
+		}
+		
+		
+	}
+
+	@Override
+	public Aluno buscarPorCPF(CPF cpf) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Aluno> listarTodosAlunosMatriculados() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}
