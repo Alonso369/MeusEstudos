@@ -1,16 +1,16 @@
 package br.com.alura;
 
-import br.com.alura.client.ClientHttpConfiguration;
-import br.com.alura.service.AbrigoService;
-import br.com.alura.service.PetService;
 import java.util.Scanner;
+import Command.CadastrarAbrigoCommand;
+import Command.CommandExecutor;
+import Command.ImportarPetsDoAbrigoCommand;
+import Command.ListarAbrigoCommand;
+import Command.ListarPetsDoAbrigoCommand;
 
 public class Controller {
 
     public static void main(String[] args) {
-    	ClientHttpConfiguration client = new ClientHttpConfiguration();
-    	AbrigoService abrigoService = new AbrigoService(client);
-    	PetService petService = new PetService(client);
+    	CommandExecutor executor = new CommandExecutor();
     	
         System.out.println("##### BOAS VINDAS AO SISTEMA ADOPET CONSOLE #####");
         try {
@@ -26,17 +26,18 @@ public class Controller {
                 String textoDigitado = new Scanner(System.in).nextLine();
                 opcaoEscolhida = Integer.parseInt(textoDigitado);
 
-                if (opcaoEscolhida == 1) {
-                	abrigoService.listarAbrigo();
-                } else if (opcaoEscolhida == 2) {
-                	abrigoService.cadastrarAbrigo();
-                } else if (opcaoEscolhida == 3) {
-                	petService.listarPetsNoAbrigo();
-                } else if (opcaoEscolhida == 4) {
-                	petService.importarPetsDoAbrigo();
-                } else if (opcaoEscolhida == 5) {
+                switch (opcaoEscolhida) {
+                case 1: 
+                	executor.executeCommand(new ListarAbrigoCommand());
+                case 2: 
+                	executor.executeCommand(new CadastrarAbrigoCommand());
+                case 3:
+                	executor.executeCommand(new ListarPetsDoAbrigoCommand());
+                case 4: 
+                	executor.executeCommand(new ImportarPetsDoAbrigoCommand());
+                case 5: 
                     break;
-                } else {
+                default:
                     System.out.println("NÚMERO INVÁLIDO!");
                     opcaoEscolhida = 0;
                 }
